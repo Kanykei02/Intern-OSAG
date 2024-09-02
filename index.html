@@ -1,0 +1,2296 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Required meta tags-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+
+	<title>PRESTIGEEnterprise Laufzettel</title>
+	 <link rel="icon" href="pics/OSAG_Logo_RGB_mit_Firmenname.jpg">
+
+
+	<!-- Bootstrapt CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/css/all.css">
+    <link rel="stylesheet" href="css/fontawesome-free-5.13.0-web/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+	crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<style type="text/css">
+		h1 {font-family: "Open Sans Light", sans-serif;
+		    font-family: "Open Sans", sans-serif;
+		    font-weight: 100;
+		}
+		* {
+			font-family: "Open Sans", sans-serif;
+			font-style: normal;
+		}
+		.vl {
+  				border-left: 5px dotted #dcdcdc;
+  				height: 376px;
+  				width: 0px;
+			}
+		hr {
+			background-color: trarent;
+		}
+		.modal-header {
+			background-color: #a2c617;
+			color: white;
+		}
+        
+	</style>
+  
+</head>
+
+<body>
+
+	<header>
+
+		<div class="container-fluid">
+			<div class="row mainContainer">
+				<div class="col-9 left-side">
+					<div class="col-9 mainTop fixed-top">
+						<div class="row top-main">
+							<div class="col logo-name">
+								<h1 class="logo-text">Laufzettel</h1>
+							</div>
+							<div class="col-2 logo-pic">
+								<img src="pics/OSAG_Logo_RGB_mit_Firmenname.jpg" class="rounded LogoPic" alt="LogoPic">
+							</div>
+						</div>
+					</div>
+
+					<div class="second-container">
+						<div class="row twoColumns">
+							<div class="col scroll-bg">
+								<div class="scroll-div">
+									<div class="scroll-object">
+										<div class="row">
+											<div class="col forms-body">
+
+												<div id="header" class="col first-child">
+													<div class="row">
+														<div class="col-2 drp-mn-status">
+															<select class="form-select form-control statusButton" aria-label="Status">
+																  <option value="1">AKTIV</option>
+																  <option value="2">Abgelaufen</option>
+															</select>
+															<p>Status</p>
+														</div>
+														<div class="col drp-mn-types">
+															<select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+																<option selected>Auswählen...</option>
+															    <option value="1">Erst-Laufzettel</option>
+															    <option value="2">Folge-Laufzettel</option>
+															</select>
+															<p>Laufzettel-Art</p>
+														</div>
+														<div class="col-6 name-of-form">
+															<form>
+																<div class="form-group">
+																	<input type="text" class="form-control" id="tubLfzN" name="LfzN">
+																	<label for="tubLfzN">Laufzettel-Name</label>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+
+												<div class="top-form">
+													<div class="row">
+
+														<div class="col part-first">
+															<div class="col part-left">
+																<h5>Lieferadresse</h5>
+
+																<div class="col first-part-body">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubFirma" name="firma">
+																			<label for="tubFirma">Unternehmen</label>
+																		</div>
+																	</form>
+																	<div class="row">
+																		<div class="col-8 mdl-part">
+																			<form>
+																				<div class="form-group">
+																					<input type="text" class="form-control" id="tubStraße" name="straße">
+																					<label for="tubStraße">Straße</label>
+																				</div>
+																			</form>
+																		</div>
+																		<div class="col mdl-partR">
+																			<form>
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubHsnm" name="hsnm">
+																					<label for="tubHsnm">Hausnummer</label>
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-4 sc-mdl-part">
+																			<form>
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubPLZ" name="plz">
+																					<label for="tubPLZ">PLZ</label>
+																				</div>
+																			</form>
+																		</div>
+																		<div class="col">
+																			<form>
+																				<div class="form-group">
+																					<input type="text" class="form-control" id="tubOrt" name="ort">
+																					<label for="tubOrt">Ort</label>
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubLand" name="land">
+																			<label for="tubLand">Land</label>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+
+														<div class="vl"></div>
+
+														<div class="col part-second">
+															<div class="col part-right">
+
+																<h5>Rechnungsadresse</h5>
+
+																<div class="col second-part-body">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubFirmaR" name="firma">
+																			<label for="tubFirmaR">Unternehmen</label>
+																		</div>
+																	</form>
+																	<div class="row">
+																		<div class="col-8 mdl-partR">
+																			<form>
+																				<div class="form-group">
+																					<input type="text" class="form-control" id="tubStraßeR" name="straße">
+																					<label for="tubStraßeR">Straße</label>
+																				</div>
+																			</form>
+																		</div>
+																		<div class="col mdl-partR">
+																			<form>
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubHsnmR" name="hsnm">
+																					<label for="tubHsnmR">Hausnummer</label>
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																	<div class="row">
+																		<div class="col-4 sc-mdl-part">
+																			<form>
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubPLZR" name="plz">
+																					<label for="tubPLZR">PLZ</label>
+																				</div>
+																			</form>
+																		</div>
+																		<div class="col">
+																			<form>
+																				<div class="form-group">
+																					<input type="text" class="form-control" id="tubOrtR" name="ort">
+																					<label for="tubOrtR">Ort</label>
+																				</div>
+																			</form>
+																		</div>
+																	</div>
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubLandR" name="land">
+																			<label for="tubLandR">Land</label>
+																		</div>
+																	</form>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
+												<hr class="btnTrans" style="border-top: 5px dotted #808080" />
+
+												<div class="col second-child">
+													<div class="row">
+														<div class="col-2 radioButton">
+															<div class="form-check form-check-inline">
+															  	<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+															  	<label class="form-check-label" for="inlineRadio1">ja</label>
+															</div>
+															<div class="form-check form-check-inline">
+															  	<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+															  	<label class="form-check-label" for="inlineRadio2">Nein</label>
+															</div>
+															<p class="textOfRadio">Wartungsvertrag?</p>
+														</div>
+														<div class="col drp-mn-waiting">
+															<select class="form-select form-control wtngButton" aria-label="Wartungsvertrag">
+															  	<option selected>Auswählen...</option>
+															  	<option value="1">jährlich</option>
+															  	<option value="2">halbjärlich</option>
+															  	<option value="3">quartal</option>
+															</select>
+															<p>Wartungszyklus</p>
+														</div>
+														<div class="col-6">
+															<form>
+																<div class="form-group">
+																	<input type="text" class="form-control" id="tubwartVer" name="wartVer">
+																	<label for="tubwartVer">Wartungsvertragsnummer</label>
+																</div>
+															</form>
+														</div>
+													</div>
+												</div>
+
+												<div class="doubleColumn">
+													
+													<h5 class="lttlText">Ansprechpartner:</h5>
+													
+													<div class="container">
+														<table class="row">
+															<tbody id="dynamicard1">
+																<tr>
+																	<td class="col-3">
+																		<input type="text" name="nachname[]" id="nachname" class="form-control">
+																		<label for="nachname">Nachname</label>
+																	</td>
+																	<td class="col-3">
+																		<input type="text" name="vorname[]" id="vorname" class="form-control">
+																		<label for="vorname">Vorname</label>
+																	</td>
+																	<td class="col-3">
+																		<input type="text" name="email[]" id="email" class="form-control">
+																		<label for="email">E-Mail</label>
+																	</td>
+																	<td class="col-3">
+																		<input type="text" name="position[]" id="position" class="form-control">
+																		<label for="position">Position</label>
+																	</td>
+																	<td>
+																		<button id="addRow" class="btn btn-primary">+</button>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+
+												<div class="col-6 right-child">
+													<div class="lznd">
+														<form>
+															<div class="form-group">
+																<input type="text" class="form-control" id="tubEmpL" name="empL">
+																<label for="tubEmpL">Empfänger Lizenzdatei</label>
+															</div>
+														</form>
+													</div>
+												</div>
+
+												<div class="col middle-form-name">
+													<h3>PRESTIGEEnterprise Versionsinformationen</h3>
+												</div>
+
+												<div class="middle-form">
+													<div class="row">
+														<div class="col">
+															<div class="col middle-form-body">
+																<form>
+																	<div class="form-group">
+																		<input type="text" class="form-control" id="tubSrnm" name="srnm">
+																		<label for="tubSrnm">Seriennummer</label>
+																	</div>
+																</form>
+																<div class="row">
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="text" class="form-control" id="tubVrs" name="vrs">
+																				<label for="tubVrs">Version</label>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="text" class="form-control" id="tubRvs" name="rvs">
+																				<label for="tubRvs">Revision</label>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="text" class="form-control" id="tubBld" name="bld">
+																				<label for="tubBld">Build</label>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="text" class="form-control" id="tubMac" name="mac">
+																				<label for="tubMac">MAC-Adresse</label>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="text" class="form-control" id="tubDns" name="dns">
+																				<label for="tubDns">DNS</label>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+																<div class="row">
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="text" class="form-control" id="tubIp" name="ip">
+																				<label for="tubIp">IP-Adresse</label>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="col">
+																		<select class="form-select form-control lznButton" aria-label="Lizenzart">
+																		  	<option selected>Auswählen..</option>
+																		  	<option value="1">Produktiv (Kunde)</option>
+																		  	<option value="2">Testsystem (Kunde)</option>
+																		  	<option value="3">Testsystem (OSAG)</option>
+																		  	<option value="4">Testsystem (Partner)</option>
+																		  	<option value="5">Pilot</option>
+																		</select>
+																		<p>Lizenzart</p>
+																	</div>
+																</div>
+																<form>
+																	<div class="form-group">
+																		<input type="text" class="form-control" id="tubMnd" name="mnd">
+																		<label for="tubMnd">Mandant-Name</label>
+																	</div>
+																</form>
+																<div class="row">
+																	<div class="col-8">
+																		<select class="form-select form-control lznButton" aria-label="Lizenzart">
+																		  	<option selected>Auswählen..</option>
+																		  	<option value="1">on premise</option>
+																		  	<option value="2">PaaS (OSAG)</option>
+																		  	<option value="3">Partner</option>
+																		  	<option value="4">Dienstleister</option>
+																		</select>
+																		<p>Installationsort</p>
+																	</div>
+																	<div class="col radioButtonMiddle">
+																		<div class="form-check form-check-inline">
+																		  	<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+																		  	<label class="form-check-label" for="inlineRadio1">ja</label>
+																		</div>
+																		<div class="form-check form-check-inline">
+																		  	<input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+																		  	<label class="form-check-label" for="inlineRadio2">Nein</label>
+																		</div>
+																		<p class="textOfRadio">Zugang</p>
+																	</div>
+																</div>
+															</div>
+														</div>
+														<div class="col middle-form-name-right">
+															<h3>PaaS:</h3>
+															<p>Nur ausfüllen bei PaaS-Kunden</p>
+															<div class="row">
+																<div class="col">
+																	<select class="form-select form-control lznButton" aria-label="Lizenzart">
+																		<option selected>Auswählen..</option>
+																		<option value="1">Rent</option>
+																		<option value="2">Buy</option>
+																	</select>
+																	<p>Tarif</p>
+																</div>
+																<div class="col">
+																	<select class="form-select form-control lznButton" aria-label="Lizenzart">
+																		<option selected>Auswählen..</option>
+																		<option value="1">Ja</option>
+																		<option value="2">Nein</option>
+																	</select>
+																	<p>WebSetup</p>
+																</div>
+															</div>
+															<form>
+																<div class="form-group">
+																	<input type="text" class="form-control" id="tubOnlS" name="onlS">
+																	<label for="tubOnlS">Online-Server</label>
+																</div>
+																<div class="form-group">
+																	<input type="text" class="form-control" id="tubUrl" name="url">
+																	<label for="tubUrl">URL</label>
+																</div>
+																<div class="form-group">
+																	<input type="text" class="form-control" id="tubDtb" name="dtb">
+																	<label for="tubDtb">Datenbankserver</label>
+																</div>
+															</form>
+														</div>
+														<div class="middle-form-info">
+															<div class="col">
+																<form>
+																	<textarea class="form-control" placeholder="Anmerkungen" rows="4"></textarea>
+																</form>
+															</div>
+															<div id="zoom" class="col zoom">
+																<div class="row">
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="number" class="form-control" id="tubUsr" name="usr">
+																				<label for="tubUsr">User gesamt</label>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="number" class="form-control" id="tubDspl" name="dspl">
+																				<label for="tubDspl">DisplayEngines gesamt</label>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="number" class="form-control" id="tubPrnt" name="prnt">
+																				<label for="tubPrnt">PrintEngines gesamt</label>
+																			</div>
+																		</form>
+																	</div>
+																	<div class="col">
+																		<form>
+																			<div class="form-group">
+																				<input type="number" class="form-control" id="tubEvnt" name="evnt">
+																				<label for="tubEvnt">EventHandler gesamt</label>
+																			</div>
+																		</form>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<div class="middle-form-child">
+													<div class="col mdl-form">
+														<div class="mdl-form-label">
+															<h3>PRESTIGEEnterprise Server</h3>
+														</div>
+														<div class="row">
+															<div class="col">
+																<select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+																    <option selected>Auswählen...</option>
+																    <option value="1">Hauptinstanz (Standart: 1 App-Server, 1 DB Server)</option>
+																    <option value="2">Primär Applikations-Server LoadBalancer</option>
+																    <option value="3">Weiterer Applikations-Server LoadBalancer</option>
+																    <option value="4">RabbitMQ-Server</option>
+																    <option value="5">OperationManager-Server</option>
+																    <option value="6">ImportService-Server</option>
+																</select>
+																<p>Server-Art</p>
+															</div>
+															<div class="col">
+																<select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+																    <option selected>Auswählen...</option>
+																    <option value="1">Produktiv</option>
+																    <option value="2">Test</option>
+																    <option value="3">Demo</option>
+																    <option value="4">PreProd</option>
+																</select>
+																<p>Installation-Art</p>
+															</div>
+														</div>
+													</div>
+
+													<div id="accordion" class="col">
+														<div class="card">
+													    	<div class="card-header" id="headingOne">
+														    	<div class="row">
+														    		<div class="col">
+														    			<h5 class="mb-0 mlt-label">Multiserversystem</h5>
+														    		</div>
+														    		<div class="col-1">
+																		<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseOne" onclick="event.stopPropagation()">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+							  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																			</svg>
+																		</a>
+														    		</div>
+														    	</div>
+													    	</div>
+												
+													    	<div id="collapseOne" class="collapse">
+														      	<div class="card-body">
+														        	<div class="row">
+														        		<div class="col">
+														        			<form>
+																				<div class="form-group">
+																					<input type="text" class="form-control" id="tubMlt" name="mlt">
+																					<label for="tubMlt">Multiserver-ID</label>
+																				</div>
+																			</form>
+														        		</div>
+														        		<div class="col">
+														        			<form>
+																				<div class="form-group">
+																					<input type="text" class="form-control" id="tubSum" name="sum">
+																					<label for="tubSum">Server-Gesamt</label>
+																				</div>
+																			</form>
+														        		</div>
+														        		<div class="col">
+														        			<form>
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubOpm" name="opm">
+																					<label for="tubOpm">OperationManager-Anzahl</label>
+																				</div>
+																			</form>
+														        		</div>
+														        		<div class="col">
+														        			<form>
+																				<div class="form-group">
+																					<input type="text" class="form-control" id="tubOpr" name="opr">
+																					<label for="tubOpr">OperationManager-Gesamt</label>
+																				</div>
+																			</form>
+														        		</div>
+														        	</div>
+														        	<div class="col">
+																		<form>
+																			<textarea class="form-control" placeholder="Anmerkungen" rows="4"></textarea>
+																		</form>
+																	</div>
+														      	</div>
+													    	</div>
+													  	</div>
+													</div>
+
+												</div>
+
+												<div class="col mdl-form-second">
+													<div class="mdl-form-labelS">
+														<h4>Module</h4>
+													</div>
+													<div id="accordion1">
+														<div class="card">
+															<div class="card-header" id="headingTwo">
+															    <div class="row">
+															    	<div class="col">
+															    		<h5 class="mb-0 mlt-label">Servermodule</h5>
+															    	</div>
+															    	<div class="col-1">
+																		<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseTwo" onclick="event.stopPropagation()">
+																			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								  												<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																			</svg>
+																		</a>
+															    	</div>
+															    </div>
+															</div>
+														
+															<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion1">
+															    <div class="card-body">
+															        <div class="row">
+															        	<div class="col">
+															        		<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck20">
+																				<label class="form-check-label" for="serverCheck20">
+																					MobileBrowser (User & LicenseController)
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck21">
+																				<label class="form-check-label" for="serverCheck21">
+																				    CrossMerchandising
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck22">
+																				<label class="form-check-label" for="serverCheck22">
+																				    AnalyzeHistory
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck23">
+																				<label class="form-check-label" for="serverCheck23">
+																				    Text-Bausteine
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck24">
+																				<label class="form-check-label" for="serverCheck24">
+																				    ShelfManager
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck25">
+																				<label class="form-check-label" for="serverCheck25">
+																				    Newsticker (RSS-Feed)
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck26">
+																				<label class="form-check-label" for="serverCheck26">
+																				    LiveInfo & eLearnung
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck27">
+																				<label class="form-check-label" for="serverCheck27">
+																				    LivePreview
+																				</label>
+																			</div>
+															        	</div>
+
+															        	<div class="vl second"></div>
+
+															        	<div class="col">
+															        		<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck28">
+																				<label class="form-check-label" for="serverCheck28">
+																					PrintShop
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck29">
+																				<label class="form-check-label" for="serverCheck29">
+																					ContentAbo
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck30">
+																				<label class="form-check-label" for="serverCheck30">
+																					CrossPrinting
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck31">
+																				<label class="form-check-label" for="serverCheck31">
+																					Mehrartikelplakate
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck32">
+																				<label class="form-check-label" for="serverCheck32">
+																					XML-Artikelimport + XSL-Prozessor
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck33">
+																				<label class="form-check-label" for="serverCheck33">
+																					AppService
+																				</label>
+																			</div>
+																			<div class="form-check">
+																				<input class="form-check-input" type="checkbox" value="" id="serverCheck34">
+																				<label class="form-check-label" for="serverCheck34">
+																					ESL
+																				</label>
+																			</div>
+															        	</div>
+															        </div>
+															    </div>
+															</div>
+
+															<div class="card">
+															    <div class="card-header" id="headingThree">
+															    	<div class="row">
+															    		<div class="col">
+															    			<div class="row">
+															    				<div class="col-3">
+															    					<h5 class="mb-0 mlt-label">LiveInfo Token</h5>
+															    				</div>
+															    				 <div class="col supText">
+															    					<p class="supTextChild"> - mit Modul Liveinfo & eLearning</p>
+															    				</div>
+															    			</div>
+															    		</div>
+															    		<div class="col-1">
+																			<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseThree" onclick="event.stopPropagation()">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																				</svg>
+																			</a>
+															    		</div>
+															    	</div>
+															    </div>
+														
+															    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion1">
+															      	<div class="card-body">
+															        	<div class="row">
+															        		<div class="col">
+															        			<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenCheck40">
+																					<label class="form-check-label" for="tokenCheck40">
+																					    Mettler
+																					</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck41">
+																				  	<label class="form-check-label" for="tokenCheck41">
+																				    	Bizerba
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck42">
+																				  	<label class="form-check-label" for="tokenCheck42">
+																				    	Online AG
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck43">
+																				  	<label class="form-check-label" for="tokenCheck43">
+																				    	iPhone
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck44">
+																				  	<label class="form-check-label" for="tokenCheck44">
+																				    	SWIsS
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck45">
+																				  	<label class="form-check-label" for="tokenCheck45">
+																				    	TVG
+																				  	</label>
+																				</div>
+															        		</div>
+
+															        		<div class="vl third"></div>
+
+															        		<div class="col">
+															        			<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenCheck46">
+																					<label class="form-check-label" for="tokenCheck46">
+																					    ESL SES-Imagotag
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenCheck47">
+																					<label class="form-check-label" for="tokenCheck47">
+																					    ESL Delfi
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenCheck48">
+																					<label class="form-check-label" for="tokenCheck48">
+																					    ESL SoluM
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenCheck49">
+																					<label class="form-check-label" for="tokenCheck49">
+																					    ESL Rainus
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenCheck50">
+																					<label class="form-check-label" for="tokenCheck50">
+																					    ESL Woutex
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenCheck51">
+																					<label class="form-check-label" for="tokenCheck51">
+																					    ESL Hanshow
+																					</label>
+																				</div>
+															        		</div>
+															        	</div>
+															      	</div>
+															    </div>
+															</div>
+
+															<div class="card">
+															    <div class="card-header" id="headingFour">
+															    	<div class="row">
+															    		<div class="col">
+															    			<div class="row">
+															    				<div class="col-3">
+															    					<h5 class="mb-0 mlt-label">LivePreview Token</h5>
+															    				</div>
+															    				<div class="col supTextP">
+															    					<p class="supTextChild"> - mit Modul LivePreview</p>
+															    				</div>
+															    			</div>
+															    		</div>
+															    		<div class="col-1">
+																			<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseFour" onclick="event.stopPropagation()">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																				</svg>
+																			</a>
+															    		</div>
+															    	</div>
+															    </div>
+														
+															    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion1">
+															      	<div class="card-body">
+															        	<div class="row">
+															        		<div class="col">
+															        			<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenPCheck60">
+																					<label class="form-check-label" for="tokenPCheck60">
+																					    Mettler
+																					</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck61">
+																				  	<label class="form-check-label" for="tokenPCheck61">
+																				    	Bizerba
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck62">
+																				  	<label class="form-check-label" for="tokenPCheck62">
+																				    	Online AG
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck63">
+																				  	<label class="form-check-label" for="tokenPCheck63">
+																				    	iPhone
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck64">
+																				  	<label class="form-check-label" for="tokenPCheck64">
+																				    	SWIsS
+																				  	</label>
+																				</div>
+																				<div class="form-check">
+																				  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck65">
+																				  	<label class="form-check-label" for="tokenPCheck65">
+																				    	TVG
+																				  	</label>
+																				</div>
+															        		</div>
+
+															        		<div class="vl third"></div>
+
+															        		<div class="col">
+															        			<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenPCheck66">
+																					<label class="form-check-label" for="tokenPCheck66">
+																					    ESL SES-Imagotag
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenPCheck67">
+																					<label class="form-check-label" for="tokenPCheck67">
+																					    ESL Delfi
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenPCheck68">
+																					<label class="form-check-label" for="tokenPCheck68">
+																					    ESL SoluM
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenPCheck69">
+																					<label class="form-check-label" for="tokenPCheck69">
+																					    ESL Rainus
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenPCheck70">
+																					<label class="form-check-label" for="tokenPCheck70">
+																					    ESL Woutex
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="tokenPCheck71">
+																					<label class="form-check-label" for="tokenPCheck71">
+																					    ESL Hanshow
+																					</label>
+																				</div>
+															        		</div>
+															        	</div>
+															      	</div>
+															    </div>
+															</div>
+
+															<div class="card">
+															    <div class="card-header" id="headingFive">
+															    	<div class="row">
+															    		<div class="col">
+															    			<div class="row">
+															    				<div class="col-3">
+															    					<h5 class="mb-0 mlt-label">ESL StoreEngines</h5>
+															    				</div>
+															    				<div class="col supTextP">
+															    					<p class="supTextChild"> - zusätzlich zum Servermodul</p>
+															    				</div>
+															    			</div>
+															    		</div>
+															    		<div class="col-1">
+																			<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseFive" onclick="event.stopPropagation()">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																				</svg>
+																			</a>
+															    		</div>
+															    	</div>
+															    </div>
+														
+															    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion1">
+															      	<div class="card-body">
+															      		Anzahl der Filialen mit bis zu:
+															        	<div class="row">
+															        		<div class="col">
+																				<form>
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl1" name="esl1">
+																						<label>300 ESLEngines</label>
+																					</div>
+																				</form>
+																			</div>
+																			<div class="col">
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubEsl2" name="esl2">
+																					<label>1.500 ESLEngines</label>
+																				</div>
+																			</div>
+																			<div class="col">
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubEsl3" name="esl3">
+																					<label>5.000 ESLEngines</label>
+																				</div>
+																			</div>
+															        	</div>
+															        	<div class="row">
+															        		<div class="col">
+																				<form>
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl4" name="esl4">
+																						<label>12.000 ESLEngines</label>
+																					</div>
+																				</form>
+																			</div>
+																			<div class="col">
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubEsl5" name="esl5">
+																					<label>25.000 ESLEngines</label>
+																				</div>
+																			</div>
+																			<div class="col">
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubEsl6" name="esl6">
+																					<label>40.000 ESLEngines</label>
+																				</div>
+																			</div>
+															        	</div>
+															        	<div class="row">
+															        		<div class="col">
+																				<form>
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl7" name="esl7">
+																						<label>60.000 ESLEngines</label>
+																					</div>
+																				</form>
+																			</div>
+																			<div class="col">
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubEsl8" name="esl8">
+																					<label>80.000 ESLEngines</label>
+																				</div>
+																			</div>
+																			<div class="col">
+																				<div class="form-group">
+																					<input type="number" class="form-control" id="tubEsl9" name="esl9">
+																					<label>100.000 ESLEngines</label>
+																				</div>
+																			</div>
+															        	</div>
+															      	</div>
+															    </div>
+															</div>
+
+															<div class="card">
+															    <div class="card-header" id="headingSix">
+															    	<div class="row">
+															    		<div class="col">
+															    			<div class="row">
+															    				<div class="col-3">
+															    					<h5 class="mb-0 mlt-label">API-Controller</h5>
+															    				</div>
+															    			</div>
+															    		</div>
+															    		<div class="col-1">
+																			<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseSix" onclick="event.stopPropagation()">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+								  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																				</svg>
+																			</a>
+															    		</div>
+															    	</div>
+															    </div>
+														
+															    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion1">
+															      	<div class="card-body">
+															      		<div class="col">
+															      			<form>
+															      				<div class="form-group">
+																					<input type="text" class="form-control" id="tubPN" name="pn">
+																					<label for="tubPN">Package-Name</label>
+																				</div>
+																				<div class="form-group">
+																					<textarea class="form-control" rows="1"></textarea>
+																					<div class="row">
+																						<div class="col-2">
+																							<p>Controller-Typ</p>
+																						</div>
+																						<div class="col">
+																							<p class="lttlT font-weight-bold">Data</p>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="form-group">
+																					<textarea class="form-control" rows="1"></textarea>
+																					<div class="row">
+																						<div class="col-2">
+																							<p>Controller-Typ</p>
+																						</div>
+																						<div class="col">
+																							<p class="lttlT font-weight-bold">API</p>
+																						</div>
+																					</div>
+																				</div>
+																				<div class="form-group">
+																					<textarea class="form-control" placeholder="Anmerkungen" rows="1"></textarea>
+																				</div>
+															      			</form>
+															      		</div>
+															      	</div>
+															    </div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<hr class="btnTrans" style="border-top: 5px dotted #808080" />
+
+												<div class="col">
+													<h3>PRESTIGE-Lizenzen</h3>
+												</div>
+
+												<div class="container">
+													<table class="row">
+														<div>
+															<tbody id="dynamicadd">
+																<tr>
+																	<td class="col-3">
+																		<input type="text" name="version[]" id="version" class="form-control">
+																		<label for="version">Version</label>
+																	</td>
+																	<td class="col-3">
+																		<input type="text" name="anzl[]" id="anzl" class="form-control">
+																		<label for="anzl">Anzahl-Lizenzen</label>
+																	</td>
+																	<td class="col">
+																		<input type="text" name="pe[]" id="pe" class="form-control">
+																		<label for="pe">PRESTIGE-Seriennummer</label>
+																	</td>
+																	<td>
+																		<button id="add" class="btn btn-primary">+</button>
+																	</td>
+																</tr>
+															</tbody>	
+														</div>
+													</table>
+												</div>
+
+												<hr class="btnTrans" style="border-top: 5px dotted #808080" />
+
+												<div class="forms-footer">
+													<div class="col">
+														<h2>Lizenz-Erweiterung</h2>
+													</div>
+													<div class="col forms-footer-body" id="dynamicadd2">
+														<div class="row">
+															<div class="col">
+																<input type="number" name="peServer[]" id="peServer" class="form-control">
+																<label for="peServer">PE-Server</label>
+															</div>
+															<div class="col">
+																<input type="number" name="user[]" id="user" class="form-control">
+																<label for="user">User</label>
+															</div>
+															<div class="col">
+																<input type="number" name="prEngn[]" id="prEngn" class="form-control">
+																<label for="prEngn">PrintEngine</label>
+															</div>
+															<div class="col">
+																<input type="number" name="dpEngn[]" id="dpEngn" class="form-control">
+																<label for="dpEngn">DisplayEngine</label>
+															</div>
+															<div class="col">
+																<input type="number" name="evHndl[]" id="evHndl" class="form-control">
+																<label for="evHndl">EventHandler</label>
+															</div>
+														</div>
+
+														<!--
+														<div id="accordion">
+															<div class="card footersCard">
+																<div class="card-header" id="headingOne">
+																    <div class="row">
+																    	<div class="col">
+																    		<h5 class="mb-0 mlt-label">Multiserver-Lizenz-Erweiterungen</h5>
+																    	</div>
+																    	<div class="col-1">
+																			<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseOne1">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									  												<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																				</svg>
+																			</a>
+																    	</div>
+																    </div>
+																</div>
+															
+																<div id="collapseOne1" class="collapse">
+																    <div class="card-body">
+																        <div class="row">
+																        	<div class="col">
+																        		<form>
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubMlt" name="mlt">
+																						<label for="tubMlt">Anzahl-Server</label>
+																					</div>
+																				</form>
+																        	</div>
+																        	<div class="col">
+																        		<form>
+																					<div class="form-group">
+																						<input type="text" class="form-control" id="tubSum" name="sum">
+																						<label for="tubSum">Anzahl OperationManager</label>
+																					</div>
+																				</form>
+																        	</div>
+																        	<div class="col">
+																        		<select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+																					<option selected>Auswählen...</option>
+																					<option value="1">Hauptinstanz (Standart: 1 App-Server, 1 DB Server)</option>
+																					<option value="2">Primär Applikations-Server LoadBalancer</option>
+																					<option value="3">Weiterer Applikations-Server LoadBalancer</option>
+																					<option value="4">RabbitMQ-Server</option>
+																					<option value="5">OperationManager-Server</option>
+																					<option value="6">ImportService-Server</option>
+																				</select>
+																				<p>Server-Art</p>
+																        	</div>
+																        	<div class="col">
+																        		<select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+																					<option selected>Auswählen...</option>
+																					<option value="1">Produktiv</option>
+																					<option value="2">Test</option>
+																					<option value="3">Demo</option>
+																					<option value="4">PreProd</option>
+																				</select>
+																				<p>Installation-Art</p>
+																        	</div>
+																        </div>
+																        <div class="col">
+																			<form>
+																				<textarea class="form-control" placeholder="Anmerkungen" rows="4"></textarea>
+																			</form>
+																		</div>
+																    </div>
+																</div>
+															</div>
+														</div>
+														-->
+
+													    <div id="accordion2">
+														    <div class="card footersCard">
+														        <div class="card-header" id="headingOne1">
+														            <div class="row">
+														                <div class="col">
+														                    <h5 class="mb-0 mlt-label">Multiserver-Lizenz-Erweiterungen</h5>
+														                </div>
+														                <div class="col-1">
+														                    <a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseOne1" aria-expanded="true" aria-controls="collapseOne1" onclick="event.stopPropagation()">
+														                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+														                            <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+														                        </svg>
+														                    </a>
+														                </div>
+														            </div>
+														        </div>
+														        <div id="collapseOne1" class="collapse" aria-labelledby="headingOne1" data-parent="#accordion2">
+														            <div class="card-body">
+														                <div class="row">
+														                    <div class="col">
+														                        <form>
+														                            <div class="form-group">
+														                                <input type="number" class="form-control" id="tubMlt" name="mlt">
+														                                <label for="tubMlt">Anzahl-Server</label>
+														                            </div>
+														                        </form>
+														                    </div>
+														                    <div class="col">
+														                        <form>
+														                            <div class="form-group">
+														                                <input type="text" class="form-control" id="tubSum" name="sum">
+														                                <label for="tubSum">Anzahl OperationManager</label>
+														                            </div>
+														                        </form>
+														                    </div>
+														                    <div class="col">
+														                        <select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+														                            <option selected>Auswählen...</option>
+														                            <option value="1">Hauptinstanz (Standart: 1 App-Server, 1 DB Server)</option>
+														                            <option value="2">Primär Applikations-Server LoadBalancer</option>
+														                            <option value="3">Weiterer Applikations-Server LoadBalancer</option>
+														                            <option value="4">RabbitMQ-Server</option>
+														                            <option value="5">OperationManager-Server</option>
+														                            <option value="6">ImportService-Server</option>
+														                        </select>
+														                        <p>Server-Art</p>
+														                    </div>
+														                    <div class="col">
+														                        <select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+														                            <option selected>Auswählen...</option>
+														                            <option value="1">Produktiv</option>
+														                            <option value="2">Test</option>
+														                            <option value="3">Demo</option>
+														                            <option value="4">PreProd</option>
+														                        </select>
+														                        <p>Installation-Art</p>
+														                    </div>
+														                </div>
+														                <div class="col">
+														                    <form>
+														                        <textarea class="form-control" placeholder="Anmerkungen" rows="4"></textarea>
+														                    </form>
+														                </div>
+														            </div>
+														        </div>
+														    </div>
+														</div>
+
+														<!--Test-->
+														    <div class="accordion" id="accordionExample">
+														        <div class="accordion-item">
+														            <h2 class="accordion-header" id="headingOne">
+														                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+														                    Accordion Item #1
+														                </button>
+														            </h2>
+														            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+														                <div class="accordion-body">
+														                    Dies ist der Inhalt des ersten Accordions. Es ist standardmäßig geschlossen, bis das Plugin zum Aufklappen die entsprechenden Klassen hinzufügt.
+														                </div>
+														            </div>
+														        </div>
+														        <div class="accordion-item">
+														            <h2 class="accordion-header" id="headingTwo">
+														                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+														                    Accordion Item #2
+														                </button>
+														            </h2>
+														            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+														                <div class="accordion-body">
+														                    Dies ist der Inhalt des zweiten Accordions. Es ist standardmäßig geschlossen, bis das Plugin zum Aufklappen die entsprechenden Klassen hinzufügt.
+														                </div>
+														            </div>
+														        </div>
+														        <div class="accordion-item">
+														            <h2 class="accordion-header" id="headingThree">
+														                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+														                    Accordion Item #3
+														                </button>
+														            </h2>
+														            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+														                <div class="accordion-body">
+														                    Dies ist der Inhalt des dritten Accordions. Es ist standardmäßig geschlossen, bis das Plugin zum Aufklappen die entsprechenden Klassen hinzufügt.
+														                </div>
+														            </div>
+														        </div>
+														    </div>
+
+
+														<div class="ftr-form-label">
+															<h4>Modul-Erweiterungen</h4>
+														</div>
+
+														<div id="accordion3">
+															<div class="card">
+																<div class="card-header" id="headingOne2">
+																    <div class="row">
+																    	<div class="col">
+																    		<h5 class="mb-0 mlt-label">Servermodule</h5>
+																    	</div>
+																    	<div class="col-1">
+																			<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseFt" onclick="event.stopPropagation()">
+																				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									  												<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																				</svg>
+																			</a>
+																    	</div>
+																    </div>
+																</div>
+															
+																<div id="collapseFt" class="collapse" aria-labelledby="headingOne2" data-parent="#accordion3">
+																    <div class="card-body">
+																        <div class="row">
+																        	<div class="col">
+																        		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck1">
+																					<label class="form-check-label" for="serverCheck1">
+																					    LivePreview
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck2">
+																					<label class="form-check-label" for="serverCheck2">
+																					   	XML Artikelimport
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck3">
+																					<label class="form-check-label" for="serverCheck3">
+																					   	ESL Electronic Shelf Label
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck4">
+																					<label class="form-check-label" for="serverCheck4">
+																					    Analyze History
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck5">
+																					<label class="form-check-label" for="serverCheck5">
+																					    Mehrartikelplakate
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck6">
+																					<label class="form-check-label" for="serverCheck6">
+																					    CrossMerchandising
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck7">
+																					<label class="form-check-label" for="serverCheck7">
+																					    MobileClient (MobileBrowser)
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck8">
+																					<label class="form-check-label" for="serverCheck8">
+																					   	LiveInfo & eLearning
+																					</label>
+																				</div>
+																        	</div>
+
+																        	<div class="vl second"></div>
+
+																        	<div class="col">
+																        		<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck9">
+																					<label class="form-check-label" for="serverCheck9">
+																					    PrintShop
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck10">
+																					<label class="form-check-label" for="serverCheck10">
+																					    AppServices
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck11">
+																					<label class="form-check-label" for="serverCheck11">
+																					    CrossPrinting
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck12">
+																					<label class="form-check-label" for="serverCheck12">
+																					    ShelfManager
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck13">
+																					<label class="form-check-label" for="serverCheck13">
+																					   OnlineNews Ticker (RSS-Feed)
+																					</label>
+																				</div>
+																				<div class="form-check">
+																					<input class="form-check-input" type="checkbox" value="" id="serverCheck14">
+																					<label class="form-check-label" for="serverCheck14">
+																						TextBausteine
+																					</label>
+																				</div>
+																        	</div>
+																        </div>
+																    </div>
+																</div>
+
+																<div class="card">
+																    <div class="card-header" id="headingOne3">
+																    	<div class="row">
+																    		<div class="col">
+																    			<div class="row">
+																    				<div class="col-3">
+																    					<h5 class="mb-0 mlt-label">LiveInfo Token</h5>
+																    				</div>
+																    				<div class="col supText">
+																    					<p class="supTextChild"> - mit Modul Liveinfo & eLearning</p>
+																    				</div>
+																    			</div>
+																    		</div>
+																    		<div class="col-1">
+																				<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseFt2" onclick="event.stopPropagation()">
+																					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																					</svg>
+																				</a>
+																    		</div>
+																    	</div>
+																    </div>
+															
+																    <div id="collapseFt2" class="collapse" aria-labelledby="headingOne3" data-parent="#accordion3">
+																      	<div class="card-body">
+																        	<div class="row">
+																        		<div class="col">
+																        			<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenCheck1">
+																						<label class="form-check-label" for="tokenCheck1">
+																						    Mettler
+																						</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck2">
+																					  	<label class="form-check-label" for="tokenCheck2">
+																					    	Bizerba
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck3">
+																					  	<label class="form-check-label" for="tokenCheck3">
+																					    	Online AG
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck4">
+																					  	<label class="form-check-label" for="tokenCheck4">
+																					    	iPhone
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck5">
+																					  	<label class="form-check-label" for="tokenCheck5">
+																					    	SWIsS
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenCheck6">
+																					  	<label class="form-check-label" for="tokenCheck6">
+																					    	TVG
+																					  	</label>
+																					</div>
+																        		</div>
+
+																        		<div class="vl third"></div>
+
+																        		<div class="col">
+																        			<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenCheck7">
+																						<label class="form-check-label" for="tokenCheck7">
+																						    ESL SES-Imagotag
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenCheck8">
+																						<label class="form-check-label" for="tokenCheck8">
+																						    ESL Delfi
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenCheck9">
+																						<label class="form-check-label" for="tokenCheck9">
+																						    ESL SoluM
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenCheck10">
+																						<label class="form-check-label" for="tokenCheck10">
+																						    ESL Rainus
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenCheck11">
+																						<label class="form-check-label" for="tokenCheck11">
+																						    ESL Woutex
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenCheck12">
+																						<label class="form-check-label" for="tokenCheck12">
+																						    ESL Hanshow
+																						</label>
+																					</div>
+																        		</div>
+																        	</div>
+																      	</div>
+																    </div>
+																</div>
+
+																<div class="card">
+																    <div class="card-header" id="headingOne4">
+																    	<div class="row">
+																    		<div class="col">
+																    			<div class="row">
+																    				<div class="col-3">
+																    					<h5 class="mb-0 mlt-label">LivePreview Token</h5>
+																    				</div>
+																    				<div class="col supTextP">
+																    					<p class="supTextChild"> - mit Modul LivePreview</p>
+																    				</div>
+																    			</div>
+																    		</div>
+																    		<div class="col-1">
+																				<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseFt3" onclick="event.stopPropagation()">
+																					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																					</svg>
+																				</a>
+																    		</div>
+																    	</div>
+																    </div>
+															
+																    <div id="collapseFt3" class="collapse" aria-labelledby="headingOne4" data-parent="#accordion3">
+																      	<div class="card-body">
+																        	<div class="row">
+																        		<div class="col">
+																        			<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenPCheck1">
+																						<label class="form-check-label" for="tokenPCheck1">
+																						    Mettler
+																						</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck2">
+																					  	<label class="form-check-label" for="tokenPCheck2">
+																					    	Bizerba
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck3">
+																					  	<label class="form-check-label" for="tokenPCheck3">
+																					    	Online AG
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck4">
+																					  	<label class="form-check-label" for="tokenPCheck4">
+																					    	iPhone
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck5">
+																					  	<label class="form-check-label" for="tokenPCheck5">
+																					    	SWIsS
+																					  	</label>
+																					</div>
+																					<div class="form-check">
+																					  	<input class="form-check-input" type="checkbox" value="" id="tokenPCheck6">
+																					  	<label class="form-check-label" for="tokenPCheck6">
+																					    	TVG
+																					  	</label>
+																					</div>
+																        		</div>
+
+																        		<div class="vl third"></div>
+
+																        		<div class="col">
+																        			<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenPCheck7">
+																						<label class="form-check-label" for="tokenPCheck7">
+																						    ESL SES-Imagotag
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenPCheck8">
+																						<label class="form-check-label" for="tokenPCheck8">
+																						    ESL Delfi
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenPCheck9">
+																						<label class="form-check-label" for="tokenPCheck9">
+																						    ESL SoluM
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenPCheck10">
+																						<label class="form-check-label" for="tokenPCheck10">
+																						    ESL Rainus
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenPCheck11">
+																						<label class="form-check-label" for="tokenPCheck11">
+																						    ESL Woutex
+																						</label>
+																					</div>
+																					<div class="form-check">
+																						<input class="form-check-input" type="checkbox" value="" id="tokenPCheck12">
+																						<label class="form-check-label" for="tokenPCheck12">
+																						    ESL Hanshow
+																						</label>
+																					</div>
+																        		</div>
+																        	</div>
+																      	</div>
+																    </div>
+																</div>
+
+																<div class="card">
+																    <div class="card-header" id="headingOne5">
+																    	<div class="row">
+																    		<div class="col">
+																    			<div class="row">
+																    				<div class="col-3">
+																    					<h5 class="mb-0 mlt-label">ESL StoreEngines</h5>
+																    				</div>
+																    				<div class="col supTextP">
+																    					<p class="supTextChild"> - zusätzlich zum Servermodul</p>
+																    				</div>
+																    			</div>
+																    		</div>
+																    		<div class="col-1">
+																				<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseFt4" onclick="event.stopPropagation()">
+																					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																					</svg>
+																				</a>
+																    		</div>
+																    	</div>
+																    </div>
+															
+																    <div id="collapseFt4" class="collapse" aria-labelledby="headingOne5" data-parent="#accordion3">
+																      	<div class="card-body">
+																      		Anzahl der Filialen mit bis zu:
+																        	<div class="row">
+																        		<div class="col">
+																					<form>
+																						<div class="form-group">
+																							<input type="number" class="form-control" id="tubEsl1" name="esl1">
+																							<label for="tubEsl1">300 ESLEngines</label>
+																						</div>
+																					</form>
+																				</div>
+																				<div class="col">
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl2" name="esl2">
+																						<label for="tubEsl2">1.500 ESLEngines</label>
+																					</div>
+																				</div>
+																				<div class="col">
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl3" name="esl3">
+																						<label for="tubEsl3">5.000 ESLEngines</label>
+																					</div>
+																				</div>
+																        	</div>
+																        	<div class="row">
+																        		<div class="col">
+																					<form>
+																						<div class="form-group">
+																							<input type="number" class="form-control" id="tubEsl4" name="esl4">
+																							<label for="tubEsl4">12.000 ESLEngines</label>
+																						</div>
+																					</form>
+																				</div>
+																				<div class="col">
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl5" name="esl5">
+																						<label for="tubEsl5">25.000 ESLEngines</label>
+																					</div>
+																				</div>
+																				<div class="col">
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl6" name="esl6">
+																						<label for="tubEsl6">40.000 ESLEngines</label>
+																					</div>
+																				</div>
+																        	</div>
+																        	<div class="row">
+																        		<div class="col">
+																					<form>
+																						<div class="form-group">
+																							<input type="number" class="form-control" id="tubEsl7" name="esl7">
+																							<label for="tubEsl7">60.000 ESLEngines</label>
+																						</div>
+																					</form>
+																				</div>
+																				<div class="col">
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl8" name="esl8">
+																						<label for="tubEsl8">80.000 ESLEngines</label>
+																					</div>
+																				</div>
+																				<div class="col">
+																					<div class="form-group">
+																						<input type="number" class="form-control" id="tubEsl9" name="esl9">
+																						<label for="tubEsl9">100.000 ESLEngines</label>
+																					</div>
+																				</div>
+																        	</div>
+																      	</div>
+																    </div>
+																</div>
+
+																<div class="card">
+																    <div class="card-header" id="headingOne6">
+																    	<div class="row">
+																    		<div class="col">
+																    			<div class="row">
+																    				<div class="col-3">
+																    					<h5 class="mb-0 mlt-label">API-Controller</h5>
+																    				</div>
+																    			</div>
+																    		</div>
+																    		<div class="col-1">
+																				<a href="#" class="btn btn-link mltsr" data-toggle="collapse" data-target="#collapseFt5" onclick="event.stopPropagation()">
+																					<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+									  													<path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+																					</svg>
+																				</a>
+																    		</div>
+																    	</div>
+																    </div>
+															
+																    <div id="collapseFt5" class="collapse" aria-labelledby="headingOne6" data-parent="#accordion3">
+																      	<div class="card-body">
+																      		<div class="col">
+																      			<form>
+																      				<div class="form-group">
+																						<input type="text" class="form-control package-name" id="tubVt" name="vt">
+																						<label for="tubVt">Package-Name nach Erstellung der Lizenzdatei hier eintragen (optional)</label>
+																					</div>
+																					<div class="form-group">
+																						<textarea class="form-control" rows="1"></textarea>
+																						<div class="row">
+																							<div class="col-2">
+																								<p>Controller-Typ</p>
+																							</div>
+																							<div class="col">
+																								<p class="lttlT font-weight-bold">Data</p>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="form-group">
+																						<textarea class="form-control" rows="1"></textarea>
+																						<div class="row">
+																							<div class="col-2">
+																								<p>Controller-Typ</p>
+																							</div>
+																							<div class="col">
+																								<p class="lttlT font-weight-bold">API</p>
+																							</div>
+																						</div>
+																					</div>
+																					<div class="form-group">
+																						<textarea class="form-control" placeholder="Anmerkungen" rows="1"></textarea>
+																					</div>
+																      			</form>
+																      		</div>
+																      	</div>
+																    </div>
+																</div>
+															</div>
+														</div>
+
+														<div class="footer-label">
+															<h3 text->Bemerkungen</h3>
+															<form>
+																<textarea class="footersText form-control" rows="4"></textarea>
+															</form>
+															<div class="row">
+																<div class="col">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubVtA" name="vta">
+																			<label for="tubVtA">A: bestellt über (VT)</label>
+																		</div>
+																	</form>
+																</div>
+																<div class="col">
+																	<div class="form-group">
+																		<input type="date" class="form-control" id="tubBstD" name="bstD">
+																		<label for="tubBstD">A1: Bestelldatum</label>
+																	</div>
+																</div>
+																<div class="col">
+																	<div class="form-group">
+																		<input type="text" class="form-control" id="tubCst" name="cst">
+																		<label for="tubCst">B: Lizenzerstellung (CST)</label>
+																	</div>
+																</div>
+																<div class="col">
+																	<div class="form-group">
+																		<input type="text" class="form-control" id="tubVrsn" name="vrsn">
+																		<label for="tubVrsn">B1: Versionsnr. (CST)</label>
+																	</div>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubVerE" name="verE">
+																			<label for="tubVerE">C: Versionserstellung</label>
+																		</div>
+																	</form>
+																</div>
+																<div class="col">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubAusl" name="ausl">
+																			<label for="tubAusl">D: Auslieferung</label>
+																		</div>
+																	</form>
+																</div>
+																<div class="col">
+																	<form>
+																		<select class="form-select form-control typesButton" aria-label="Auslieferungsart">
+																			<option selected>Auswählen...</option>
+																			<option value="1">Upload durch Online</option>
+																			<option value="2">versendet per E-mail</option>
+																			<option value="3">Lizenzdatei</option>
+																		</select>
+																		<p>D1: Ausliferungsart</p>
+																	</form>
+																</div>
+																<div class="col">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubBrchn" name="brchn">
+																			<label for="tubBrchn">E: Berechnung</label>
+																		</div>
+																	</form>
+																</div>
+															</div>
+															<div class="row">
+																<div class="col-3">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubRecnN" name="recnN">
+																			<label for="tubRecnN">Rechnungsnummer</label>
+																		</div>
+																	</form>
+																</div>
+																<div class="col-3">
+																	<form>
+																		<div class="form-group">
+																			<input type="text" class="form-control" id="tubLiefN" name="liefN">
+																			<label for="tubLiefN">Lieferscheinnummer</label>
+																		</div>
+																	</form>
+																</div>
+																<div class="col-3">
+																	<form>
+																		<select class="form-select form-control typesButton" aria-label="Wartung">
+																			<option selected>Nein</option>
+																			<option value="1">Ja</option>
+																			<option value="2">Nein</option>
+																		</select>
+																		<p>Wartung aktualiesiert?</p>
+																	</form>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+
+												<hr class="btnTrans" style="border-top: 5px dotted #808080" />
+
+												<div id="bottom" class="col footerL">
+													<div class="row">
+														<div class="col btnAddRow">
+															<button id="addRow2" class="form-control">+ Erweiterungen hinzufügen</button>
+														</div>
+														<div class="col-2 footerBtn">
+															<div class="btn btn-primary btn-danger form-control" data-bs-toggle="modal" data-bs-target="#myModal">
+																Absender
+															</div>
+															<div class="modal" id="myModal">
+																<div class="modal-dialog">
+																	<div class="modal-content">
+																		<div class="modal-header">
+																			<div class="row">
+																				<div class="col-9">
+																					<h5 class="modal-text">Laufzettel abschicken?</h5>
+																				</div>
+																				<div class="col">
+																					<button type="submit" class="btn btnSubmit" data-bs-dismiss="modal">Nein</button>
+																				</div>
+																			</div>
+																			<div class="btnAbsender">
+																				<button type="submit" class="btn btnSubmit Abschicken">Abschicken</button>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-2">
+								<div class="row">
+									<div class="col back-to-button">
+										<a href="#header" class="scrollToTopBtn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#a2c617" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+												<path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0m-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707z"/>
+											</svg>
+										</a>
+									</div>
+									<div class="col back-to-button">
+										<a href="#zoom" class="scrollToZoomBtn form-control">Summe</a>
+									</div>
+									<div class="col back-to-button">
+										<a href="#bottom" class="scrollToBottomBtn">
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#a2c617" class="bi bi-arrow-down-circle-fill" viewBox="0 0 16 16">
+												<path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
+											</svg>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col right-side">
+					<div class="col right-side-form">
+						<div class="right-side-label">
+							<h1 class="textLabel">Suche</h1>
+						</div>
+						<div class="input-group">
+							<div class="form-outline" data-mdb-input-init>
+								<input id="search-focus" type="search" id="form1" placeholder="Laufzettel durchsuchen..." class="form-control"/>
+							</div>
+							<button type="button" class="btn btN btn-primary" data-mdb-ripple-init>
+						    	<i class="fas fa-search"></i>
+						  	</button>
+						</div>
+						<div class="right-side-labelF">
+							<h1 class="textLabel">Filter</h1>
+						</div>
+						<div class="filter-body">
+							<form>
+								<p>Status</p>
+								<select class="form-select form-control searchStatus" placeholder="Aktiv" aria-label="Laufzettel-Art">
+									<option value="1">Aktiv</option>
+									<option value="2">Abgelaufen</option>
+								</select>
+								<div class="form-group">
+									<label for="tubLznm">Lizenznummer</label>
+									<input type="text" class="form-control" id="tubLznm" name="lznm">
+								</div>
+								<div class="form-group">
+									<label for="tubMndt">Mandant</label>
+									<input type="text" class="form-control" id="tubMndt" name="mndt">
+								</div>
+								<div class="form-group">
+									<label for="tubUntr">Ubternehmen</label>
+									<input type="text" class="form-control" id="tubUntr" name="untr">
+								</div>
+								<div class="form-group">
+									<label for="tubAnpr">Ansprechpartner</label>
+									<input type="text" class="form-control" id="tubAnpr" name="anpr">
+								</div>
+								<div class="form-group">
+									<label for="tubBrbt">Bearbeiter</label>
+									<input type="text" class="form-control" id="tubBrbt" name="brbt">
+								</div>
+								<div class="form-group">
+									<label for="tubMlts">Multiserver-ID</label>
+									<input type="text" class="form-control" id="tubMlts" name="mlts">
+								</div>
+								<div class="footer">
+									<a href="#" class="btn btn-primary stretched-link form-control saveBtn">Übernehmen</a>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+		
+
+		<!-- Optional JavaScript -->
+    	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"crossorigin="anonymous"></script>
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+        crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+ 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script type="text/javascript" src="scripts/script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+		<!--<script>
+        $(document).ready(function() {
+            var rowCount = 1;
+
+            $('#addRow2').click(function(e) {
+                e.preventDefault();
+                rowCount++;
+
+                var newRow = `
+                    <div class="row dynamic-row" data-rowid="${rowCount}">
+                        <hr class="btnTrans" style="border-top: 5px dotted #808080">
+                        <div class="col forms-footer-body">
+                            <div class="row">
+                                <div class="col">
+                                    <input type="number" name="peServer[]" class="form-control">
+                                    <label>PE-Server</label>
+                                </div>
+                                <div class="col">
+                                    <input type="number" name="user[]" class="form-control">
+                                    <label>User</label>
+                                </div>
+                                <div class="col">
+                                    <input type="number" name="prEngn[]" class="form-control">
+                                    <label>PrintEngine</label>
+                                </div>
+                                <div class="col">
+                                    <input type="number" name="dpEngn[]" class="form-control">
+                                    <label>DisplayEngine</label>
+                                </div>
+                                <div class="col">
+                                    <input type="number" name="evHndl[]" class="form-control">
+                                    <label>EventHandler</label>
+                                </div>
+                            </div>
+
+                            <div id="accordion2">
+                            <div class="card footersCard">
+                                <div class="card-header" id="headingOne1${rowCount}">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="mb-0 mlt-label">Multiserver-Lizenz-Erweiterungen</h5>
+                                        </div>
+                                        <div class="col-1">
+                                            <a href="#" class="btn btn-link mltsr collapsed" data-toggle="collapse" data-target="#collapseOne1${rowCount}" aria-expanded="false" aria-controls="collapseOne1${rowCount}" onclick="event.stopPropagation()">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                                                    <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="collapseOne1${rowCount}" class="collapse show" aria-labelledby="headingOne1${rowCount}" data-parent="#accordion2">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="number" class="form-control" name="mlt">
+                                                        <label>Anzahl-Server</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col">
+                                                <form>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" name="sum">
+                                                        <label>Anzahl OperationManager</label>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+                                                    <option selected>Auswählen...</option>
+                                                    <option value="1">Hauptinstanz (Standart: 1 App-Server, 1 DB Server)</option>
+                                                    <option value="2">Primär Applikations-Server LoadBalancer</option>
+                                                    <option value="3">Weiterer Applikations-Server LoadBalancer</option>
+                                                    <option value="4">RabbitMQ-Server</option>
+                                                    <option value="5">OperationManager-Server</option>
+                                                    <option value="6">ImportService-Server</option>
+                                                </select>
+                                                <p>Server-Art</p>
+                                            </div>
+                                            <div class="col">
+                                                <select class="form-select form-control typesButton" aria-label="Laufzettel-Art">
+                                                    <option selected>Auswählen...</option>
+                                                    <option value="1">Produktiv</option>
+                                                    <option value="2">Test</option>
+                                                    <option value="3">Demo</option>
+                                                    <option value="4">PreProd</option>
+                                                </select>
+                                                <p>Installation-Art</p>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <form>
+                                                <textarea class="form-control" placeholder="Anmerkungen" rows="4"></textarea>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                            <div class="footer-label">
+                                <h3>Bemerkungen</h3>
+                                <form>
+                                    <textarea class="footersText form-control" rows="4"></textarea>
+                                </form>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="vta">
+                                            <label>A: bestellt über (VT)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="date" class="form-control" name="bstD">
+                                            <label>A1: Bestelldatum</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="cst">
+                                            <label>B: Lizenzerstellung (CST)</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="vrsn">
+                                            <label>B1: Versionsnr. (CST)</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="verE">
+                                            <label>C: Versionserstellung</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="ausl">
+                                            <label>D: Auslieferung</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <select class="form-select form-control typesButton" aria-label="Auslieferungsart">
+                                            <option selected>Auswählen...</option>
+                                            <option value="1">Upload durch Online</option>
+                                            <option value="2">versendet per E-mail</option>
+                                            <option value="3">Lizenzdatei</option>
+                                        </select>
+                                        <p>D1: Auslieferungsart</p>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="brchn">
+                                            <label>E: Berechnung</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="recnN">
+                                            <label>Rechnungsnummer</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" name="liefN">
+                                            <label>Lieferscheinnummer</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <select class="form-select form-control typesButton" aria-label="Wartung">
+                                            <option selected>Nein</option>
+                                            <option value="1">Ja</option>
+                                            <option value="2">Nein</option>
+                                        </select>
+                                        <p>Wartung aktualisiert?</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="btn remove_row" data-rowid="${rowCount}">
+                                - Erweiterung entfernen
+                            </button>
+                        </div>
+                    </div>
+                `;
+
+                $('#dynamicadd2').append(newRow);
+            });
+
+            $(document).on('click', '.remove_row', function() {
+                var rowId = $(this).attr("data-rowid");
+                $('[data-rowid="' + rowId + '"]').remove();
+            });
+        });
+    </script>-->
+
+	</header>
+
+</body>
+</html>
